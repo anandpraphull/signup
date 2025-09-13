@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .signup-container {
+        display: flex;
+        gap: 40px;
+        flex-direction: column;
+        background: rgb(248, 245, 245);
+        width: 22%;
+        border-radius: 9px 9px 35px 35px;
+        padding: 30px;
+        margin: 50px auto;
+      }
+      @media screen and (max-width: 1024px) {
+        .signup-container {
+          width: 75%;
+        }
+      }
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6,
+      input,
+      p {
+        margin: 0;
+        padding: 0;
+        text-align: center;
+      }
+      input {
+        text-align: start;
+        padding: 5px 10px;
+      }
+      .signup-description {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 7px;
+      }
+      .input-form {
+        display: flex;
+        flex-direction: column;
+        /* width: 50%; */
+        align-items: center;
+        gap: 7px;
+      }
+      .signup-form {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+      }
+      .form {
+        display: flex;
+        flex-direction: column;
+        gap: 14px;
+        align-items: center;
+      }
+      .forgot-pass {
+        display: flex;
+        gap: 15px;
+      }
+      .login-btn {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        width: 214px;
+        justify-content: center;
+        padding: 8px 23px;
+        border-radius: 60px;
+        background: rgb(237, 155, 3);
+        border: none;
+        cursor: pointer;
+      }
+      .member-login {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+      }
+      .already-member {
+        display: flex;
+        flex-direction: column;
+        gap: 7px;
+        align-items: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="signup-container">
+      <div class="signup-form">
+        <div class="signup-description">
+          <h1>Sign Up</h1>
+          <h3>Create Free account <br />to download your document</h3>
+          <p>
+            join 1.5 million user every month who <br />enjoy unlimited
+            downloads <br />shares and printing
+          </p>
+        </div>
+        <div class="form">
+          <div class="input-form">
+            <input type="text" placeholder="Email" />
+            <input type="password" placeholder="Password" />
+          </div>
+          <div class="forgot-pass">
+            <div>
+              <input type="checkbox" />
+              <span>Remember me</span>
+            </div>
+            <a href="#">Forgot Password?</a>
+          </div>
+        </div>
+      </div>
+      <div class="member-login">
+        <button class="login-btn">LOG IN</button>
+        <div class="already-member">
+          <span>Already have an account?</span>
+          <a href="#">Member Login</a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
